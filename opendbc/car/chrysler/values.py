@@ -71,6 +71,11 @@ class CAR(Platforms):
     ChryslerCarSpecs(mass=1778., wheelbase=2.71, steerRatio=16.7),
   )
 
+  JEEP_GRAND_CHEROKEE_2016 = ChryslerPlatformConfig(
+    [ChryslerCarDocs("Jeep Grand Cherokee 2016", video=None)],
+    ChryslerCarSpecs(minSteerSpeed=0.0, mass=1836.0, wheelbase=2.700000047683716, steerRatio=13.0, centerToFrontRatio=1.350000023841858, minEnableSpeed=-1.0, tireStiffnessFactor=1.0),
+  )
+
   JEEP_GRAND_CHEROKEE_2019 = ChryslerPlatformConfig(  # includes 2020 Trailhawk
     [ChryslerCarDocs("Jeep Grand Cherokee 2019-21", video="https://www.youtube.com/watch?v=jBe4lWnRSu4")],
     JEEP_GRAND_CHEROKEE.specs,
